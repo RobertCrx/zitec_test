@@ -154,7 +154,7 @@ function carlist_shortcode_function( $atts = array(), $content = '' ) {
 						<?php while( $cars_loop->have_posts() ): $cars_loop->the_post(); ?>
 							<a href="<?php echo the_permalink(); ?>" class="car-post">
 								<div class="post-title">
-									<?php echo get_the_title(); ?>
+									<h2><?php echo get_the_title(); ?></h2>
 								</div>
 							</a>
 						<?php endwhile; 
