@@ -42,9 +42,9 @@ if ( ! function_exists( 'load_data' ) ) :
 						'slug' => $brand,
 					]);
 				endforeach;
-		
-				wp_set_object_terms($post_data, $colors[rand(1, 4)] , 'color', true);
-				wp_set_object_terms($post_data, $fuels[rand(1, 3)], 'fuel', true);
+				
+				wp_set_object_terms($post_data, $colors[intval(rand(0,3))] , 'color', true);
+				wp_set_object_terms($post_data, $fuels[intval(rand(0,2))], 'fuel', true);
 				wp_set_object_terms($post_data, $car, 'manufacturer', true);
 		
             endforeach;
